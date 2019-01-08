@@ -142,7 +142,7 @@ class projects extends Component{
           <Card className="c_1" shadow={0}>
             <CardTitle style={{color: 'black', height: '200px', background:"url(https://media.giphy.com/media/3rgXBCMbhWxcPTHBC0/giphy.gif) center/cover "}}>Song Library</CardTitle>
             <CardText style={{'font-weight':'bold',height: "150px"}}>
-             A program where the user can create a personal song library. It is built using the concenpt of linked lists.
+             A program where the user can create a personal song library. It is built using the concept of linked lists.
             </CardText>
             <CardActions border>
               <Button href="https://github.com/rahulbanerjee26/songLibrary" colored>
@@ -159,6 +159,95 @@ class projects extends Component{
             </CardText>
             <CardActions border>
               <Button href="https://github.com/rahulbanerjee26/decimal-BinaryConverter" colored>
+                <p style={{fontSize:"2em",color: "black"}}className="fa fa-github-square" aria-hidden="true">
+                </p>
+              </Button>
+            </CardActions>
+          </Card>
+
+          </div>
+        )
+      }
+
+      if(this.state.activeTab===3){
+        return(
+          <div className="projects_cpp">
+          <Card className="c_1" shadow={0}>
+            <CardTitle style={{color: 'black', height: '200px', background:"url(http://2.bp.blogspot.com/-qYSLCI1rjD4/VqM5FUieZ5I/AAAAAAAACdo/ykyzL6Uuxd0/s1600/CPP.gif) center/cover "}}>TicTacToe</CardTitle>
+            <CardText style={{'font-weight':'bold',height: "150px"}}>
+             Simple TicTacToe game built using the SFML library.
+            </CardText>
+            <CardActions border>
+              <Button href="https://github.com/rahulbanerjee26/TicTacToe" colored>
+                <p style={{fontSize:"2em",color: "black"}}className="fa fa-github-square" aria-hidden="true">
+                </p>
+              </Button>
+            </CardActions>
+          </Card>
+
+          <Card className="c_1" shadow={0}>
+            <CardTitle style={{color: 'black', height: '200px', background:"url(http://2.bp.blogspot.com/-qYSLCI1rjD4/VqM5FUieZ5I/AAAAAAAACdo/ykyzL6Uuxd0/s1600/CPP.gif) center/cover "}}>Galaxy Explorer</CardTitle>
+            <CardText style={{'font-weight':'bold',height: "150px"}}>
+             Asteroids are generated randomly and a phasor is used to shoot them. Shoot Asteroids to earn points. An AI is used to control the phasor which can not move from it<span> &#39;</span> s initial position but can rotate.
+            </CardText>
+            <CardActions border>
+              <Button href="https://github.com/rahulbanerjee26/galaxy-explorer" colored>
+                <p style={{fontSize:"2em",color: "black"}}className="fa fa-github-square" aria-hidden="true">
+                </p>
+              </Button>
+            </CardActions>
+          </Card>
+
+          <Card className="c_1" shadow={0}>
+            <CardTitle style={{color: 'black', height: '200px', background:"url(http://2.bp.blogspot.com/-qYSLCI1rjD4/VqM5FUieZ5I/AAAAAAAACdo/ykyzL6Uuxd0/s1600/CPP.gif) center/cover "}}>Shapes DataBase</CardTitle>
+            <CardText style={{'font-weight':'bold',height: "150px"}}>
+              A parser is used to take input from the user. It is checked for error using a priority order. The user can add, update, search and delete shapes.</CardText>
+            <CardActions border>
+              <Button href="https://github.com/rahulbanerjee26/Shapes-DataBase" colored>
+                <p style={{fontSize:"2em",color: "black"}}className="fa fa-github-square" aria-hidden="true">
+                </p>
+              </Button>
+            </CardActions>
+          </Card>
+
+          <Card className="c_1" shadow={0}>
+            <CardTitle style={{color: 'black', height: '200px', background:"url(http://2.bp.blogspot.com/-qYSLCI1rjD4/VqM5FUieZ5I/AAAAAAAACdo/ykyzL6Uuxd0/s1600/CPP.gif) center/cover "}}>Websites DataBase</CardTitle>
+            <CardText style={{'font-weight':'bold',height: "150px"}}>
+              Database to store information about websites built using the concept of Binary Tress. The user can add, delete, update and search for websites.</CardText>
+            <CardActions border>
+              <Button href="https://github.com/rahulbanerjee26/website-DataBase" colored>
+                <p style={{fontSize:"2em",color: "black"}}className="fa fa-github-square" aria-hidden="true">
+                </p>
+              </Button>
+            </CardActions>
+          </Card>
+          </div>
+        )
+      }
+
+      if(this.state.activeTab===4){
+        return(
+          <div className="projects_unity">
+          <Card className="unity_1" shadow={0}>
+            <CardTitle style={{color: 'white', height: '200px', background:"url(https://media.giphy.com/media/c8XYthhqOzGAo/giphy.gif) center/cover "}}>Car Driving Game</CardTitle>
+            <CardText style={{'font-weight':'bold',height: "150px"}}>
+             A simple car game built for android in Unity using the standard assets and C#.
+            </CardText>
+            <CardActions border>
+              <Button href="https://github.com/rahulbanerjee26/Car-Game" colored>
+                <p style={{fontSize:"2em",color: "black"}}className="fa fa-github-square" aria-hidden="true">
+                </p>
+              </Button>
+            </CardActions>
+          </Card>
+
+          <Card className="unity_1" shadow={0}>
+            <CardTitle style={{color: 'white', height: '200px', background:"url(https://media.giphy.com/media/c8XYthhqOzGAo/giphy.gif) center/cover "}}>Jack the Giant.V0</CardTitle>
+            <CardText style={{'font-weight':'bold',height: "150px"}}>
+            Version 0 Features: 1)Player animations 2) Infite background effect 3)Respawning of Clouds
+            </CardText>
+            <CardActions border>
+              <Button href="https://github.com/rahulbanerjee26/JackTheGiant.V0" colored>
                 <p style={{fontSize:"2em",color: "black"}}className="fa fa-github-square" aria-hidden="true">
                 </p>
               </Button>
@@ -181,7 +270,9 @@ class projects extends Component{
                 <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId })} ripple>
                     <Tab style={tabText}>React</Tab>
                     <Tab style={tabText} >Javascript</Tab>
-                    <Tab style={tabText} >C++/C</Tab>
+                    <Tab style={tabText} >C</Tab>
+                    <Tab style={tabText} >C++</Tab>
+                    <Tab style={tabText} >Unity</Tab>
                 </Tabs>
                 <section>
                     <div className="projects">
