@@ -10,12 +10,12 @@ class landingpage extends Component{
     };
     return(
       <div className="banner">
-        <h1> SOFTWARE ENGINEER </h1>
+        <h1> COMPUTER ENGINEERING STUDENT </h1>
         <img
           style={image} src="http://www.piwai.info/static/blog_img/murakamicat.png" alt="Logo"
         />
         <hr/>
-        <p>HTML | CSS | Javascript | React | NodeJs | C++ | C</p>
+        <p>HTML | CSS | Javascript | React | NodeJs | C++ | C </p>
         <div className="socialIcons">
           <a rel="noopener noreferrer" href="https://www.linkedin.com/in/rahulbanerjee2699/" target="_blank">
             <i className="fa fa-linkedin-square" aria-hidden="true"/>
