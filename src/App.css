@@ -4,15 +4,15 @@
   color: white;
   text-align: center;
 }
-
+body{
+  background: linear-gradient(to right, #f5af19, #f12711);
+}
 .banner p{
   font-size: 20px;
-  padding: 1em;
+  font-weight: bold;
   color: white;
-  width: 80%;
-  margin-left: 35%;
+  text-align: center;
 }
-
 
 .socialIcons {
   display: flex;
@@ -28,42 +28,79 @@
 
 .projects_react{
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   width: auto;
   margin: 2%;
 }
 
 .react_1{
-  width: 2%;
+  width: 30%;
+  margin-bottom: 2%;
 }
 
 .projects_js{
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   width: auto;
   margin: 2%;
 }
 
 .js_1{
-  width: 2%;
+  width: 30%;
+  margin-bottom: 2%;
 }
 
 .projects_c{
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: auto;
+  margin: 2%;
+}
+
+.projects_cpp{
+  display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   width: auto;
   margin: 2%;
 }
 
 .c_1{
-  width: 2%;
+  margin-bottom: 2%;
+  width: 30%;
 }
 
+.projects_unity{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-around;
+  width: auto;
+  margin: 2%;
+}
+
+.unity_1{
+  margin-bottom: 2%;
+  width: 40%;
+}
 .contact-icons{
-  font-size: 3em;
+  font-size: 4vw;
   color: black;
 }
 
 .contact-icons i{
-  margin: 3%;
+  margin: 2%;
+}
+
+.contactheader{
+  font-size: 16vw;
+}
+
+@media only screen and (max-width: 600px) {
+  .contact-icons{
+    font-size: 6vw;
+    color: black;
+  }
 }
